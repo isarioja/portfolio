@@ -1,7 +1,10 @@
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import { useLoaderData } from "react-router-dom";
 
 export default function Footer() {
+    const {linkedinProfileUrl, githubProfileUrl } = useLoaderData();
+    
     return (
         <footer className="bg-slate-900 h-30 md:h-15 grid md:grid-cols-3 place-items-center p-2 text-white 
         font-mono text-md md:text-sm">
@@ -10,10 +13,10 @@ export default function Footer() {
                 Copyright &copy; {new Date().getFullYear()} IR
             </p>
             <div className="flex gap-8 text-lg">
-                <a className="cursor-pointer" href="https://www.linkedin.com/in/isabel-rioja-75a68224a/" target="_blank">
+                <a className="cursor-pointer" href={linkedinProfileUrl} target="_blank">
                     <FaLinkedinIn />
                 </a>
-                <a className="cursor-pointer" href="https://github.com/isarioja" target="_blank">
+                <a className="cursor-pointer" href={githubProfileUrl} target="_blank">
                     <FaGithub />
                 </a>
             </div>

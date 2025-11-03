@@ -45,7 +45,6 @@ export default function HeroSection() {
     useEffect(() => {
         const currentPhrase = phrases[indexPhrase];
         setText(currentPhrase.substring(0, indexLetter));
-        console.log(indexLetter);
     }, [indexLetter]);
 
     return (
@@ -53,7 +52,7 @@ export default function HeroSection() {
             items-center"> 
             <div>
                 <h2 className="text-3xl sm:text-4xl font-bold mb-3 lg:mb-6 tracking-wider text-neutral">
-                    Hi There! <span class="inline-block sm:text-5xl origin-[70%_100%] animate-wave">🖐</span>
+                    Hi There! <span className="inline-block sm:text-5xl origin-[70%_100%] animate-wave">🖐</span>
                 </h2>
                 <h3 className="text-3xl sm:text-4xl font-bold mb-16 tracking-wider text-neutral">I'M <span className="text-fuchsia-600">ISABEL RIOJA</span></h3>
                 <h2 className="min-h-24 text-xl sm:text-3xl lg:text-4xl font-bold tracking-wider 
