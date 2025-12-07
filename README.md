@@ -26,7 +26,6 @@ This website showcases the projects I've built as a Full Stack Developer, focusi
 
 ---
 
----
 
 ## 🌟 Live Demo
 
